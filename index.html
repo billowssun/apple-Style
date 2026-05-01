@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aesthetics - The Art of Void</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Inline placeholder graphics to mimic product renders without external image dependencies */
+    .graphic-placeholder {
+      width: 400px;
+      height: 400px;
+      margin-top: 48px;
+      border-radius: var(--rounded-lg);
+      background: linear-gradient(135deg, #e0e0e0 0%, #f5f5f7 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--colors-ink-muted-48);
+      font-size: 24px;
+    }
+    
+    .graphic-placeholder.dark {
+      background: linear-gradient(135deg, #1d1d1f 0%, #333333 100%);
+      color: var(--colors-body-muted);
+    }
+    
+    .graphic-placeholder.circle {
+      border-radius: var(--rounded-full);
+      width: 300px;
+      height: 300px;
+    }
+
+    @media (max-width: 640px) {
+      .graphic-placeholder {
+        width: 280px;
+        height: 280px;
+      }
+      .graphic-placeholder.circle {
+        width: 220px;
+        height: 220px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Global Nav -->
+  <nav class="global-nav">
+    <div class="global-nav-content nav-link">
+      <a href="#">Concept</a>
+      <a href="#">Gallery</a>
+      <a href="#">Journal</a>
+      <a href="#">Archive</a>
+    </div>
+  </nav>
+
+  <!-- Sub Nav Frosted -->
+  <div class="sub-nav-frosted">
+    <div class="sub-nav-content">
+      <div class="sub-nav-title tagline">Aesthetics</div>
+      <div class="sub-nav-actions">
+        <a href="#" class="nav-link" style="color: var(--colors-ink);">Overview</a>
+        <a href="#" class="nav-link" style="color: var(--colors-ink);">Principles</a>
+        <button class="button-primary" style="padding: 6px 12px; font-size: 14px;">Subscribe</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Tile (Light) -->
+  <section class="product-tile tile-light">
+    <div class="tile-content">
+      <h1 class="hero-display tile-title">The Art of Void.</h1>
+      <p class="lead tile-tagline">Where nothing is everything.</p>
+      <div class="button-group">
+        <button class="button-primary">Enter gallery</button>
+        <button class="button-secondary-pill">Read manifesto</button>
+      </div>
+      <!-- Placeholder for "product render" resting on surface with shadow -->
+      <div class="graphic-placeholder circle product-render">
+        Essence
+      </div>
+    </div>
+  </section>
+
+  <!-- Dark Tile -->
+  <section class="product-tile tile-dark">
+    <div class="tile-content">
+      <h2 class="display-lg tile-title">Light and Shadow.</h2>
+      <p class="lead tile-tagline">Defining volume through absolute contrast.</p>
+      <div class="button-group">
+        <a href="#" class="button-primary on-dark">Learn more</a>
+      </div>
+      <!-- Placeholder graphic -->
+      <div class="graphic-placeholder dark product-render">
+        Contrast
+      </div>
+    </div>
+  </section>
+
+  <!-- Parchment Tile -->
+  <section class="product-tile tile-parchment">
+    <div class="tile-content">
+      <h2 class="display-lg tile-title">Grid and Rhythm.</h2>
+      <p class="lead tile-tagline">The predictable pulse of order.</p>
+      <div class="button-group">
+        <a href="#" class="button-primary">View systems</a>
+      </div>
+      <div class="graphic-placeholder product-render" style="border-radius: var(--rounded-none); height: 200px; width: 600px;">
+        Structure
+      </div>
+    </div>
+  </section>
+
+  <!-- Utility Cards Grid -->
+  <section class="utility-section">
+    <div class="utility-grid">
+      <!-- Card 1 -->
+      <div class="store-utility-card">
+        <div class="card-image graphic-placeholder no-shadow" style="margin-top: 0; display: flex; align-items: center; justify-content: center; font-size: 14px; width: 100%; border-radius: var(--rounded-sm);">
+          Golden Ratio
+        </div>
+        <h3 class="body-strong card-title">Proportion</h3>
+        <p class="body card-price">The foundation of harmony.</p>
+        <a href="#" class="button-utility">Explore →</a>
+      </div>
+      <!-- Card 2 -->
+      <div class="store-utility-card">
+        <div class="card-image graphic-placeholder dark no-shadow" style="margin-top: 0; display: flex; align-items: center; justify-content: center; font-size: 14px; width: 100%; border-radius: var(--rounded-sm);">
+          Palette
+        </div>
+        <h3 class="body-strong card-title">Color</h3>
+        <p class="body card-price">Emotion communicated instantly.</p>
+        <a href="#" class="button-utility">Explore →</a>
+      </div>
+      <!-- Card 3 -->
+      <div class="store-utility-card">
+        <div class="card-image graphic-placeholder no-shadow" style="margin-top: 0; display: flex; align-items: center; justify-content: center; font-size: 14px; width: 100%; border-radius: var(--rounded-sm); font-family: serif;">
+          Aa
+        </div>
+        <h3 class="body-strong card-title">Typography</h3>
+        <p class="body card-price">The voice of the text.</p>
+        <a href="#" class="button-utility">Explore →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-grid">
+        <div class="footer-column">
+          <h3 class="caption-strong">Discover</h3>
+          <ul class="dense-link">
+            <li><a href="#">Manifesto</a></li>
+            <li><a href="#">Exhibitions</a></li>
+            <li><a href="#">Featured Artists</a></li>
+            <li><a href="#">Publications</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3 class="caption-strong">Resources</h3>
+          <ul class="dense-link">
+            <li><a href="#">Design Systems</a></li>
+            <li><a href="#">Color Theory</a></li>
+            <li><a href="#">Typography Rules</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3 class="caption-strong">About</h3>
+          <ul class="dense-link">
+            <li><a href="#">Our Vision</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3 class="caption-strong">Connect</h3>
+          <ul class="dense-link">
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Newsletter</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-legal">
+        <span>Copyright © 2026 Aesthetics Gallery. All rights reserved.</span>
+        <span>Privacy Policy | Terms of Use | Legal</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
